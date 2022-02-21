@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+     #pdf {
+        margin: 10px auto 20px;
+      }
+      .pdfobject-container {
+        height: 30rem;
+        width: 75%;
+        scrollbar-width: thin;
+      }
+  </style>
+  <title>PDF VIEWER</title>
+</head>
+<body>
+  <div id="pdf">
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/pdfobject/2.2.7/pdfobject.min.js"
+      integrity="sha512-g16L6hyoieygYYZrtuzScNFXrrbJo/lj9+1AYsw+0CYYYZ6lx5J3x9Yyzsm+D37/7jMIGh0fDqdvyYkNWbuYuA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script>
+      PDFObject.embed("./sample1.pdf", "#pdf");
+    </script>
+  </div>
+</body>
+</html>
