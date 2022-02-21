@@ -6,7 +6,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
      #pdf {
-        margin: 10px auto 20px;
+        width: 80vw;
+        margin: 20px auto 20px;
+        height: 100vh;
       }
       .pdfobject-container {
         height: 30rem;
@@ -17,6 +19,7 @@
   <title>PDF VIEWER</title>
 </head>
 <body>
+  
   <div id="pdf">
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/pdfobject/2.2.7/pdfobject.min.js"
@@ -25,7 +28,7 @@
       referrerpolicy="no-referrer"
     ></script>
     <script>
-      PDFObject.embed("./sample1.pdf", "#pdf");
+      PDFObject.embed("./PDF-Viewer/The 5 Minute Personality Test.pdf", "#pdf");
     </script>
   </div>
 </body>
